@@ -1,0 +1,56 @@
+1. There are 5 objects in front of you
+2. Each of these objects has a name
+3. They are arranged from left to right
+4. Left and right are opposites
+5. The object closest to you is the furthest to the right
+6. The object four objects away from it is the furthest to the left
+7. The object furthest to the right is called a plate
+8. The object to the left of the plate is called a knife
+9. The object to the left of the knife is called Peanut Butter
+10. The object to the left of the peanut butter is called jelly
+11. The object furthest to the left (and to the left of the jelly) is called bread
+12. Bread is broken up into slices
+13. Two slices of bread are required to make a sandwich
+14. Peanut butter and jelly are both ingredients in a sandwich
+15. The plate is used to hold the sandwich
+16. The plate is not part of the sandwich
+17. The knife is used to make the sandwich
+18. The knife is not part of the sandwich
+19. The peanut butter and jelly are in jars
+20. The jars are not used to make the sandwich
+21. The bread is in a bag
+22. The bag is not used to make the sandwich
+23. Remove one slice of bread from the bag containing the bread
+24. Put that piece of bread on top of the plate
+25. Beginning at the table, there should now be a plate and then a piece of bread on top of the plate
+26. Remove the top of the jar of peanut butter
+27. Put this lit next to the plate, but not on it
+28. Pick up the knife
+29. Pick up the jar of peanut butter in the other hand
+30. Insert the knife into the jar of peanut butter
+31. Move the knife around until it is covered in peanut butter
+32. Pull the knife out of the jar
+33. Place the jar back onto the table
+34. Take the slice of bread off of the plate
+35. Choose one side of the bread
+36. This side of the bread is called "up"
+37. Apply the knife to the side of the bread called "up"
+38. Move the knife back and forth until the peanut butter has transferred to the bread
+39. Place the bread back onto the plate, making sure the "up" side is facing away from the plate
+40. Pick up the jar of jelly in the other hand
+41. Insert the knife into the jar of jelly
+42. Move the knife around until it is covered in jelly
+43. Pull the knife out of the jar
+44. Place the jar back onto the table
+45. Take the slice of bread off of the plate, avoiding touching the "up" side with your hand
+46. Apply the knife back and forth to the "up" side of the bread until all of the jelly has transferred to the bread
+47. Place the bread back onto the plate, making sure the "up" side is facing away from the plate
+48. Lick the knife until there is no peanut butter or jelly
+49. Place the knife onto the table
+50. Remove another slice of bread from the bag
+51. Place this slice of bread on top of the slice that is already on the plate
+52. Line up the edges of the bread
+53. Press the bread with your hand
+54. This object consisting of two pieces of bread, peanut butter, and jelly is called a "sandwich"
+55. Pick it up
+56. Now cry, because you don't seem to have a mouth
