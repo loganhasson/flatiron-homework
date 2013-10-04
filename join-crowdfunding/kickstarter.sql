@@ -90,10 +90,10 @@ FROM
   projects
 JOIN
   pledges ON projects.id = pledges.project_id
-WHERE
-  pledges.amount >= projects.goal
 GROUP BY
-  projects.title;
+  projects.title
+HAVING
+  SUM(pledges.amount) >= projects.goal;
 
 -- 4. Select user names and amounts of all pledges. Order them by the amount.
 
