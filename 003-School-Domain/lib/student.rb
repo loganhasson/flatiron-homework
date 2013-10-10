@@ -1,55 +1,37 @@
 class Student
-
-  attr_accessor :name, :twitter, :linkedin,
-                :github, :website
-
+  attr_accessor :name, :twitter, :linkedin, :facebook, :website
   attr_reader :id
 
-  @@all_students = []
-  @@current_id = 0
+  @@students = []
 
-  def initialize(data=nil)
-    data.each do |key, value|
-      self.send("#{key}=",value)
-    end unless data.nil?
-
-    @@all_students << self
-    @id = Student.get_next_id
-  end
-
-  def self.get_next_id
-    @@current_id += 1
-  end
-  
-  def self.get_id
-    @@current_id
-  end
-
-  def self.all
-    @@all_students
+  def initialize
+    if @@students.count == 0
+      @id = 1
+    else
+      @id = @@students.max_by { |s| s.id }.id + 1
+    end
+    @@students << self
+    @saved = false
   end
 
   def self.reset_all
-    @@all_students.clear
-    @@current_id = 0
+    @@students.clear
   end
 
-  def self.delete(id)
-    @@all_students.delete(Student.find(id))
+  def self.all
+    @@students
   end
 
-  def self.find_by_name(search_name)
-    @@all_students.select { |s| s.name.downcase.strip.include?(search_name.downcase.strip) }
+  def self.find_by_name(name)
+    @@students.select { |s| s.name == name }
   end
 
   def self.find(id)
-    @@all_students.find { |s| s.id == id }
+    @@students.select { |s| s.id == id }.first
   end
 
-  def self.import(hash)
-    hash.each do |student|
-      Student.new(student)
-    end
+  def self.delete(id)
+    @@students.reject! { |s| s.id == id}
   end
 
 end

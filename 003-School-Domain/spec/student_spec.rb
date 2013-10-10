@@ -1,5 +1,4 @@
 require_relative 'spec_helper'
-require_relative '../lib/student'
 
 describe "Student" do
 
@@ -20,8 +19,8 @@ describe "Student" do
       student.twitter.should eq("paulissupercool")
       student.linkedin = "paulhateslinkedin"
       student.linkedin.should eq("paulhateslinkedin")
-      student.github = "whoisthisguypaulanyway"
-      student.github.should eq("whoisthisguypaulanyway")
+      student.facebook = "whoisthisguypaulanyway"
+      student.facebook.should eq("whoisthisguypaulanyway")
     end
 
     it "has a website" do
@@ -70,32 +69,6 @@ describe "Student" do
 
       Student.find_by_name("Scott").first.name.should eq("Scott")
       Student.find_by_name("Avi").first.should eq(avi)
-    end
-
-  end
-
-  describe "::import" do
-
-    let(:student_hash) do
-                          [
-                            {:name => "Logan",
-                            :twitter => "http://twitter.com/loganhasson",
-                            :linkedin => "http://linkedin.com/loganhasson",
-                            :github => "http://github.com/loganhasson",
-                            :website => "http://loganhasson.github.io"}
-                          ]
-                       end
-
-
-    it "should create a new student instance with appropriate attributes" do
-      Student.reset_all
-      Student.import(student_hash)
-      student = Student.all.first
-      student.name.should eq("Logan")
-      student.twitter.should eq("http://twitter.com/loganhasson")
-      student.linkedin.should eq("http://linkedin.com/loganhasson")
-      student.github.should eq("http://github.com/loganhasson")
-      student.website.should eq("http://loganhasson.github.io")
     end
 
   end
@@ -149,4 +122,5 @@ describe "Student" do
 
     end
   end
+
 end
